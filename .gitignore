@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+data/
+*.log
+# Only the final model ships; the other runs stay local.
+checkpoints/*
+!checkpoints/best.pt
+!checkpoints/best.json
+models/

@@ -1,0 +1,13 @@
+{
+ "parameters": 102541,
+ "window_frames": 128,
+ "rate": 15.0,
+ "onnx_fp32_kb": 455.9,
+ "onnx_int8_kb": 165.5,
+ "web_bin_kb": 105.9,
+ "max_abs_diff_onnx_fp32_vs_torch": 4.76837158203125e-06,
+ "max_abs_diff_onnx_int8_vs_torch_int8": 1.9073486328125e-06,
+ "max_abs_diff_int8_vs_fp32": 0.12046414613723755,
+ "ort_ms_fp32": 0.34234998747706413,
+ "ort_ms_int8": 0.39454991929233074
+}

@@ -1,0 +1,195 @@
+{
+ "version": 1,
+ "rate": 15.0,
+ "window": 128,
+ "features": 40,
+ "joints": [
+  0,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28
+ ],
+ "mirror": [
+  0,
+  2,
+  1,
+  4,
+  3,
+  6,
+  5,
+  8,
+  7,
+  10,
+  9,
+  12,
+  11
+ ],
+ "scaleFrames": 64,
+ "classes": [
+  "battle_rope",
+  "bench_press",
+  "front_raise",
+  "jumping_jack",
+  "pommel_horse",
+  "pull_up",
+  "push_up",
+  "sit_up",
+  "squat",
+  "other"
+ ],
+ "threshold": 0.6,
+ "offset": 0.7,
+ "floats": 1690,
+ "ints": 101696,
+ "layers": [
+  {
+   "name": "inp",
+   "out": 64,
+   "in": 40,
+   "kernel": 1,
+   "dilation": 1,
+   "weights": 0,
+   "scales": 0,
+   "bias": 64
+  },
+  {
+   "name": "block1.conv",
+   "out": 64,
+   "in": 64,
+   "kernel": 3,
+   "dilation": 1,
+   "weights": 2560,
+   "scales": 128,
+   "bias": 192
+  },
+  {
+   "name": "block1.mix",
+   "out": 64,
+   "in": 64,
+   "kernel": 1,
+   "dilation": 1,
+   "weights": 14848,
+   "scales": 256,
+   "bias": 320
+  },
+  {
+   "name": "block2.conv",
+   "out": 64,
+   "in": 64,
+   "kernel": 3,
+   "dilation": 2,
+   "weights": 18944,
+   "scales": 384,
+   "bias": 448
+  },
+  {
+   "name": "block2.mix",
+   "out": 64,
+   "in": 64,
+   "kernel": 1,
+   "dilation": 1,
+   "weights": 31232,
+   "scales": 512,
+   "bias": 576
+  },
+  {
+   "name": "block4.conv",
+   "out": 64,
+   "in": 64,
+   "kernel": 3,
+   "dilation": 4,
+   "weights": 35328,
+   "scales": 640,
+   "bias": 704
+  },
+  {
+   "name": "block4.mix",
+   "out": 64,
+   "in": 64,
+   "kernel": 1,
+   "dilation": 1,
+   "weights": 47616,
+   "scales": 768,
+   "bias": 832
+  },
+  {
+   "name": "block8.conv",
+   "out": 64,
+   "in": 64,
+   "kernel": 3,
+   "dilation": 8,
+   "weights": 51712,
+   "scales": 896,
+   "bias": 960
+  },
+  {
+   "name": "block8.mix",
+   "out": 64,
+   "in": 64,
+   "kernel": 1,
+   "dilation": 1,
+   "weights": 64000,
+   "scales": 1024,
+   "bias": 1088
+  },
+  {
+   "name": "block16.conv",
+   "out": 64,
+   "in": 64,
+   "kernel": 3,
+   "dilation": 16,
+   "weights": 68096,
+   "scales": 1152,
+   "bias": 1216
+  },
+  {
+   "name": "block16.mix",
+   "out": 64,
+   "in": 64,
+   "kernel": 1,
+   "dilation": 1,
+   "weights": 80384,
+   "scales": 1280,
+   "bias": 1344
+  },
+  {
+   "name": "block32.conv",
+   "out": 64,
+   "in": 64,
+   "kernel": 3,
+   "dilation": 32,
+   "weights": 84480,
+   "scales": 1408,
+   "bias": 1472
+  },
+  {
+   "name": "block32.mix",
+   "out": 64,
+   "in": 64,
+   "kernel": 1,
+   "dilation": 1,
+   "weights": 96768,
+   "scales": 1536,
+   "bias": 1600
+  },
+  {
+   "name": "head",
+   "out": 13,
+   "in": 64,
+   "kernel": 1,
+   "dilation": 1,
+   "weights": 100864,
+   "scales": 1664,
+   "bias": 1677
+  }
+ ]
+}
